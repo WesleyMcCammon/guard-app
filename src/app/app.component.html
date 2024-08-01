@@ -1,0 +1,14 @@
+<!-- <mat-toolbar color="primary">
+  <div style="display:grid;grid-template-columns: 80fr 20fr;width:100">
+    <span>{{ title }}</span>
+    <span>sign out</span>
+  </div>
+</mat-toolbar> -->
+
+<div style="display:grid;grid-template-columns: 80fr 20fr;margin:10px 0px 10px 10px;">
+  <h1>{{ title }}</h1>
+  <button [disabled]="!isLoggedIn" mat-button (click)="signOut()">sign out</button>
+</div>
+<div style="margin-left:10px">
+  <router-outlet></router-outlet>
+</div>

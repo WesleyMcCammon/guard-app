@@ -1,0 +1,12 @@
+mat-card {
+    margin: 20px;
+  }
+  
+  mat-list-item {
+    cursor: pointer;
+  }
+  
+  mat-list-item a {
+    text-decoration: none;
+    color: inherit;
+  }

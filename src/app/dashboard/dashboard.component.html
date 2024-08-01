@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <span class="spacer"></span>
+    <button mat-button routerLink="/tasks">Task List</button>
+    <button mat-button (click)="logout()">Logout</button>
+  </mat-toolbar>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>

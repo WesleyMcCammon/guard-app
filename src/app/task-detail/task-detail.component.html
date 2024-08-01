@@ -1,0 +1,13 @@
+<h3>Task Detail</h3>
+<div style="display:flex;flex-direction: column;width:400px">
+    <mat-form-field>
+        <mat-label>Task Id</mat-label>
+        <input [(ngModel)]="taskId" matInput name="taskId" required />
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Task Name</mat-label>
+        <input matInput (ngModelChange)="onChange($event)" [(ngModel)]="taskName" name="taskName" required />
+    </mat-form-field>
+    
+    <button [disabled]="!hasUnsavedChanges" (click)="saveChanges()" mat-button color="primary">Save</button>
+</div>
